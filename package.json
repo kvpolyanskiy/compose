@@ -1,0 +1,31 @@
+{
+  "name": "@kvpolyanskiy/compose",
+  "version": "1.0.0",
+  "description": "Typescript compose",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare" : "npm run build",
+    "version" : "git add -A src",
+    "postversion" : "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvpolyanskiy/compose.git"
+  },
+  "keywords": [
+    "compose",
+    "typescript"
+  ],
+  "author": "kvpolyanskiy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kvpolyanskiy/compose/issues"
+  },
+  "homepage": "https://github.com/kvpolyanskiy/compose#readme",
+  "devDependencies": {
+    "typescript": "4.8.2"
+  },
+  "files": ["build/**/*"]
+}
